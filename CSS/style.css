@@ -35,7 +35,7 @@ body {
 .grid-item-1 {
   grid-column-start: 1;
   grid-column-end: 3;
-  min-width: 350px;
+  min-width: 200px;
 }
 
 .grid-item-2 {
@@ -61,11 +61,14 @@ body {
 .grid-item-5 {
   grid-column-start: 2;
   grid-column-end: 4;
-  min-width: 350px;
+  min-width: 200px;
 }
 
 .violet-container {
   background-color: var(--moderate-violet);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 80px;
 }
 
 .greyish-blue-container {
@@ -115,4 +118,20 @@ body {
 .profile-status {
   opacity: 0.7;
   font-size: 12px;
+}
+
+@media only screen and (max-width: 500px) {
+  .main-container {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+
+  .violet-container {
+    background-position: top right 15px;
+  }
 }
